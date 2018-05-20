@@ -5,7 +5,7 @@ String.prototype.replaceAt=function(index, character) {
     return this.substr(0, index) + character + this.substr(index+character.length);
  }
 
-const GUESSES = 15
+const GUESSES = 10
 const WIN_STRING = 'Rounds won: '
 const LOSE_STRING = 'Rounds lost: '
 const GUESS_STRING = 'Letters guessed: '
@@ -97,14 +97,14 @@ function updateGameLost() {
     loses++;
     losesView.textContent = LOSE_STRING + loses;
     alert('You lost this round :(\nThe mystery word was '+originalMysteryWord+
-          '\nDeath is imminent ;(');
+          '\nPress ok to play again!');
     newWord();
 }
 
 function updateGameWon() {
     wins++;
     winsView.textContent = WIN_STRING + wins;
-    alert('You won this round\nThe mystery word was '+originalMysteryWord+
+    alert('You won this round :)\nThe mystery word was '+originalMysteryWord+
     '\nPress ok to play again!');
     newWord();
 }
