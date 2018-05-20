@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="css/material.min.css" rel="stylesheet">
+
+    <!-- Add my own css style to my heart's content -->
+    <link href="css/myStyle.css" rel="stylesheet">
+    <Title>Material Hangman</Title>
+  </head>
+  <body>
+    <h1>Material Themed Bootstrap Powered Hangman</h1>
+
+    <h3>Press any key to get started!</h3>
+
+    <h2>Mystery Word</h2>
+
+    <h2 id="guessedWord"></h2>
+
+    <h3 id="guessedLetters"></h3>
+
+    <h4 id="guessesRemaining"></h4>
+
+    <h4 id="totalWins">Rounds won: 0</h4>
+
+    <h4 id="totalLoses">Rounds lost: 0</h4>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+    <script src="js/material.min.js"></script>
+
+    <!-- Then import my hangman game logic! -->
+    <script src="js/randomWordGenerator.js"></script>
+    <script src="js/hangmanLogic.js"></script>
+
+  </body>
+</html>

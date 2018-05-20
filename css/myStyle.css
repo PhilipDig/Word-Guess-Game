@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: var(--light-light)
+}
+
+h2 {
+    letter-spacing: 5px;
+}
+
+body {
+    background-color: var(--dark-dark)
+}
