@@ -127,3 +127,12 @@ document.onkeyup = function(event) {
 
 // Start the game with a new mystery word!
 newWord();
+
+// Added document onclick to support mobile
+document.onclick = function(event) {
+    var entry = prompt("Please enter any letter as your guess");
+    // only take first char of entry
+    if(entry) {
+        checkGuessedLetter(entry[0].toLowerCase())
+    }
+}
